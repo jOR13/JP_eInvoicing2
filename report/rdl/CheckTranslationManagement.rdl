@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="TestLanguage">
+          <DataField>TestLanguage</DataField>
+        </Field>
+        <Field Name="TestCurrencyCode">
+          <DataField>TestCurrencyCode</DataField>
+        </Field>
+        <Field Name="TestDate">
+          <DataField>TestDate</DataField>
+        </Field>
+        <Field Name="CheckTransFunctionsCaption">
+          <DataField>CheckTransFunctionsCaption</DataField>
+        </Field>
+        <Field Name="TestDateCaption">
+          <DataField>TestDateCaption</DataField>
+        </Field>
+        <Field Name="TestLanguageCaption">
+          <DataField>TestLanguageCaption</DataField>
+        </Field>
+        <Field Name="TestCurrencyCodeCaption">
+          <DataField>TestCurrencyCodeCaption</DataField>
+        </Field>
+        <Field Name="DateToTestCaption">
+          <DataField>DateToTestCaption</DataField>
+        </Field>
+        <Field Name="TestAmountText1">
+          <DataField>TestAmountText1</DataField>
+        </Field>
+        <Field Name="TestAmountText2">
+          <DataField>TestAmountText2</DataField>
+        </Field>
+        <Field Name="AmountInWordsCaption">
+          <DataField>AmountInWordsCaption</DataField>
+        </Field>
+        <Field Name="TestDateIndicator">
+          <DataField>TestDateIndicator</DataField>
+        </Field>
+        <Field Name="TestDateText">
+          <DataField>TestDateText</DataField>
+        </Field>
+        <Field Name="TestDateSeparatorFormatted">
+          <DataField>TestDateSeparatorFormatted</DataField>
+        </Field>
+        <Field Name="TestDateIndicatorCaption">
+          <DataField>TestDateIndicatorCaption</DataField>
+        </Field>
+        <Field Name="TestDateTextCaption">
+          <DataField>TestDateTextCaption</DataField>
+        </Field>
+        <Field Name="DateSeparatorCaption">
+          <DataField>DateSeparatorCaption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

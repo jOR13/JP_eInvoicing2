@@ -1,0 +1,37 @@
+{
+  "id": "e5379747-b585-46cc-977d-c7f5a5cd6fc6",
+  "name": "JP_eInvoicing",
+  "publisher": "Dinamika Peru",
+  "version": "1.0.0.3",
+  "brief": "Facturación Electrónica JP",
+  "description": "Facturación Electrónica JP",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "7ea16ad1-599b-42c4-af34-bee75f224b2a",
+      "name": "LocalizationDinamika",
+      "publisher": "Dinamika Peru",
+      "version": "1.0.1.46"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50561,
+      "to": 50570
+    }
+  ],
+  "supportedLocales": [
+    "es-ES",
+    "es-MX"
+  ],
+  "contextSensitiveHelpUrl": "https://JP_eInvoicing.com/help/",
+  "showMyCode": false,
+  "runtime": "7.0"
+}
